@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Reservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Airline Reservation</h1>
+        <form>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Enter departure city" required>
+
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination city" required>
+
+
+            <label for="departure">Departure Date:</label>
+            <input type="date" id="departure" name="departure" required>
+
+
+            <label for="return">Return Date:</label>
+            <input type="date" id="return" name="return">
+
+
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First Class</option>
+            </select>
+
+
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" max="10" required>
+
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
+
